@@ -196,6 +196,20 @@ dependencies = [
 ]
 
 [[package]]
+name = "digital-input"
+version = "0.1.0"
+dependencies = [
+ "cortex-m",
+ "cortex-m-rt",
+ "defmt",
+ "defmt-rtt",
+ "embassy-executor",
+ "embassy-nrf",
+ "embassy-time",
+ "panic-probe",
+]
+
+[[package]]
 name = "document-features"
 version = "0.2.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"

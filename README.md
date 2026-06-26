@@ -2,6 +2,21 @@
 
 Embassy-based Rust examples for XIAO BLE boards. This repository uses a workspace layout under `crates/` and provides a repeatable pattern for creating and running new firmware crates.
 
+## Setup
+
+Add the ARM Cortex-M target:
+
+```bash
+rustup target add thumbv7em-none-eabihf
+```
+
+Install [probe-rs](https://probe.rs/docs/getting-started/installation) for flashing and debugging. The quickest way is via `cargo-binstall`:
+
+```bash
+cargo install cargo-binstall
+cargo binstall probe-rs-tools
+```
+
 ## Start a new crate
 
 Create a new crate inside `crates/` and set the crate name:
